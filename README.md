@@ -7,7 +7,7 @@ In main window, press "H" to show the help screen.
 
 | Key           | Action                       | Note
 |---------------|------------------------------|-----
-| H             | Show Help Screens            | [SPACE] For Next Page
+| H             | Show Help Screens            | [SPACE] For Next Page / Exit
 | [CURSOR-KEYS] | Move Plotter                 |
 | [SPACE]       | Plot / Erase Pixel           |
 | [JOY-DIR]     | Move Plotter                 |
