@@ -1,0 +1,54 @@
+; Sprites Galore!
+;
+; C64 Memory Symbols
+;
+; Some derived from:
+;
+;    https://sourceforge.net/p/vice-emu/code/HEAD/tree/trunk/vice/data/C64/c64mem.sym
+;
+; Others created by hand using info from:
+;
+;    https://www.c64-wiki.com/wiki/BASIC-ROM
+;    http://www.cbmitapages.it/c64/c64rom.htm
+;
+vScnTxt = $0400
+vSprPtrs = $07f8
+bdcd_bPrntPosNum = $bdcd
+d000_vSprite0X = $d000
+d001_vSprite0Y = $d001
+d002_vSprite1X = $d002
+d003_vSprite1Y = $d003
+d010_vSpriteXMSB = $d010
+d011_vVicControl = $d011
+d012_vRaster = $d012
+d015_vSprEnable = $d015
+d017_vSprExpandY = $d017
+d018_vMemControl = $d018
+d019_vIRQFlags = $d019
+d01a_vIRQMasks = $d01a
+d01c_vSprMCM = $d01c
+d01d_vSprExpandX = $d01d
+d020_vBorderCol = $d020
+d021_vBackgCol0 = $d021
+d025_vSprMCMCol0 = $d025
+d026_vSprMCMCol1 = $d026
+d027_vSpr0Col = $d027
+d028_vSpr1Col = $d028
+d800_vScnColor = $d800
+dc00_cDataPortA = $dc00
+dc0d_cIRQControl = $dc0d
+e50C_kSetCursor = $e50C
+e716_kPrintChar = $e716
+eA31_kStdIRQ    = $eA31
+f3D5_kOpnSerial = $f3D5
+f642_kClsSerial = $f642
+ff96_kTKSA = $ff96
+ffa5_kACPTR = $ffa5
+ffb4_kTALK = $ffb4
+ffba_kSETLFS = $ffba
+ffbd_kSETNAM = $ffbd
+ffd2_kCHROUT = $ffd2
+ffd5_kLOAD = $ffd5
+ffd8_kSAVE = $ffd8
+ffe4_kGETIN = $ffe4
+fff0_kPLOT = $fff0

@@ -1,0 +1,45 @@
+# Sprites Galore!
+#
+# da65 info file
+# Used to create the initial a65 source
+#
+# Range      : $1000 - $3500
+# Entry Point: $2000
+#
+# usage:
+#
+#    da65 -i sprites_galore.info
+#
+# NOTE: Not using CPU '6502x' as I use illegal opcode $FC
+#       and want it to stay as .byte
+#
+GLOBAL {
+    CPU             "6502";                    #
+    STARTADDR       $1000;                     #
+    INPUTNAME       "sprites_galore-1000.prg"; #
+    INPUTOFFS       $0002;                     # Skip Load Address
+    OUTPUTNAME      "sprites_galore-1000.a65"; #
+    PAGELENGTH      0;                         # No paging
+    COMMENTS        1;                         #
+};
+
+ASMINC {
+	FILE "sprites_galore.sym";
+};
+
+RANGE   { START $1000; END $13FF; TYPE ByteTable; NAME "main_screen_text"  ; COMMENT "Shown at $0400"           ; };
+RANGE   { START $1400; END $17FF; TYPE ByteTable; NAME "main_screen_color" ; COMMENT "Copied to $D800"          ; };
+RANGE   { START $1800; END $1FFF; TYPE ByteTable; NAME "L1800"             ;                                      };
+RANGE   { START $2000; END $2351; TYPE Code     ; NAME "main"              ; COMMENT "Entry Point"              ; };
+# NOTE: DA65 renders TextTable text in wrong case
+RANGE   { START $2352; END $235F; TYPE ByteTable; NAME "press_any_key"     ; COMMENT ".byte \"press any key.\"" ; };
+RANGE   { START $2360; END $2A72; TYPE Code     ; NAME "L2360"             ;                                      };
+RANGE   { START $2A73; END $2AA5; TYPE ByteTable; NAME "L2A73"             ;                                      };
+RANGE   { START $2AA6; END $2B1C; TYPE Code     ; NAME "L2AA6"             ;                                      };
+RANGE   { START $2B1D; END $2B1F; TYPE ByteTable; NAME "L2B1D"             ; COMMENT "Padding"                  ; };
+RANGE   { START $2B20; END $2EFF; TYPE ByteTable; NAME "help_screen_pg1"   ; COMMENT "Help Page 1"              ; };
+RANGE   { START $2F00; END $2FDF; TYPE ByteTable; NAME "help_screen_pg2"   ; COMMENT "Help Page 2"              ; };
+RANGE   { START $2FE0; END $32DE; TYPE Code     ; NAME "L2FE0"             ;                                      };
+RANGE   { START $32E1; END $32FF; TYPE ByteTable; NAME "L32E1"             ; COMMENT "Padding?"                 ; };
+RANGE   { START $3300; END $34CE; TYPE Code     ; NAME "L3300"             ;                                      };
+RANGE   { START $34CF; END $34FF; TYPE ByteTable; NAME "L34CF"             ; COMMENT "Padding?"                 ; };
