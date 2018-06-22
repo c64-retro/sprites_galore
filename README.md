@@ -48,7 +48,7 @@ In main window, press "H" to show the help screen.
 
 ## Instructions for Assembly
 
-Using the [CC65](https://www.cc65.org/) assembler suite:
+Using the [CC65](http://cc65.github.io/cc65/) assembler suite:
 
     cl65 -t c64 -C c64-asm.cfg  --start-addr '$1000' -o sprites_galore.prg sprites_galore.a65
 
