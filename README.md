@@ -1,6 +1,8 @@
 # Sprites Galore!
 C64 Sprite Editor With Font Conversion, Wash Patterns, and More
 
+![Screen Shot](screenshots/original-1280x800.png)
+
 ## Help
 
 In main window, press "H" to show the help screen.
